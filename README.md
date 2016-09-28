@@ -6,4 +6,4 @@ Just run `make` and open the `display.html` file using your favorite browser
 
 ## Output demo
 
-See the output in JSFiddle: http://jsfiddle.net/gh/get/jquery/3.1.1/iambaim/scramble/tree/master/demo
+See the output in JSFiddle: http://jsfiddle.net/gh/get/library/pure/iambaim/scramble/tree/master/demo

@@ -1,4 +1,8 @@
-$( document ).ready(function() {
+var domReady = function(callback) {
+    document.readyState === "interactive" || document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
+};
+
+domReady(function() {
   var ghpath = "https://raw.githubusercontent.com/iambaim/scramble/master/demo/";
 
   var limit = 20000;
