@@ -1,4 +1,4 @@
-window.addEvent('domready', function() {
+$( document ).ready(function() {
   var ghpath = "https://raw.githubusercontent.com/iambaim/scramble/master/demo/";
 
   var limit = 20000;
