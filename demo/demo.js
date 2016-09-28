@@ -10,6 +10,8 @@ var texts = [];
 texts["seq"] = "Sequential";
 texts["rand"] = "Random";
 
+var place = [];
+
 for (var k in texts) {
 
 	var inputtype = texts[k];
@@ -25,8 +27,18 @@ for (var k in texts) {
 		document.getElementById('content').innerHTML += "<div><code>" + methodsdetailed[l] + "</code></div><br/>";
 		document.getElementById('content').innerHTML += '<div class="def" id="' + k + lp.toString() + '"></div><br/>';
 
+	}
+}
 
-		new Dygraph(
+for (var k in texts) {
+
+	var inputtype = texts[k];
+
+	for (var l in methods) {
+
+		var lp = parseInt(l) + 1;
+
+		place[k + lp.toString()] = new Dygraph(
 			document.getElementById(k + lp.toString()),
 			ghpath + k + "." + methods[l] + "." + limit + ".out", // path to CSV file
 			{
